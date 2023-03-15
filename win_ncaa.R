@@ -2,9 +2,9 @@ library(dplyr)
 library(xgboost)
 library(lme4)
 
-regresults <- read.csv("data/WRegularSeasonDetailedResults_PrelimData2018.csv")
-results <- read.csv("data/WNCAATourneyDetailedResults_PrelimData2018.csv")
-sub <- read.csv("data/WSampleSubmissionStage2.csv")
+regresults <- read.csv("data/WRegularSeasonDetailedResults.csv")
+results <- read.csv("data/WNCAATourneyDetailedResults.csv")
+sub <- read.csv("data/SampleSubmission2023.csv")
 seeds <- read.csv("data/WNCAATourneySeeds.csv")
 
 seeds$Seed = as.numeric(substring(seeds$Seed,2,4))
